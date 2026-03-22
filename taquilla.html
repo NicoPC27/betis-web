@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taquilla - Real Betis Balompié</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="contenido">
+        <!--Cabecera-->
+        <header class="container-fluid text-center py-3">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo Real Betis" class="img-fluid">
+            </a>
+        </header>
+
+        <!--Barra de navegación-->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-center" id="menu">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="plantilla.html">PLANTILLA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="partidos.html">PARTIDOS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="palmares.html">PALMARÉS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="taquilla.html">TAQUILLA</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- ALERTA -->
+        <div class="container mt-3">
+            <div id="alertaCompra" class="alert alert-success text-center d-none">
+                ✅ Compra realizada correctamente
+            </div>
+        </div>
+
+        <!-- CONTENIDO -->
+        <div class="container mt-5">
+
+            <h2 class="text-center mb-4">TAQUILLA</h2>
+
+            <!-- Partido 1 -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow">
+                        <div class="row g-0 align-items-center">
+                            <!-- Escudo equipo local -->
+                            <div class="col-3 text-center">
+                                <img src="img/betis.png" class="img-fluid p-2" style="max-height:80px;">
+                            </div>
+
+                            <!-- Info partido -->
+                            <div class="col-6 text-center">
+                                <h5 class="card-title mb-1">Real Betis - RCD Espanyol</h5>
+                                <p class="card-text mb-1">04 Abril - La Cartuja</p>
+                                <p class="card-text mb-1">LALIGA EA Sports - Jornada 30</p>
+                                <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modalCompra">
+                                    Comprar entrada
+                                </button>
+                            </div>
+
+                            <!-- Escudo equipo visitante -->
+                            <div class="col-3 text-center">
+                                <img src="img/espanyol.png" class="img-fluid p-2" style="max-height:80px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Partido 2 -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow">
+                        <div class="row g-0 align-items-center">
+                            <div class="col-3 text-center">
+                                <img src="img/betis.png" class="img-fluid p-2" style="max-height:80px;">
+                            </div>
+
+                            <div class="col-6 text-center">
+                                <h5 class="card-title mb-1">Real Betis - SC Braga</h5>
+                                <p class="card-text mb-1">16 Abril - La Cartuja</p>
+                                <p class="card-text mb-1">UEFA Europa League - Cuartos de Final (Vuelta)</p>
+                                <button class="btn btn-success btn-sm" data-bs-toggle="modal"
+                                    data-bs-target="#modalCompra">
+                                    Comprar entrada
+                                </button>
+                            </div>
+
+                            <div class="col-3 text-center">
+                                <img src="img/Braga.png" class="img-fluid p-2" style="max-height:80px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="modalCompra">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title">Compra de entradas</h5>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+
+                    <form id="formCompra">
+
+                        <div class="mb-3">
+                            <label class="form-label">Nombre</label>
+                            <input type="text" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Email</label>
+                            <input type="email" class="form-control" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Número de entradas</label>
+                            <select class="form-select">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-success w-100">
+                            Confirmar compra
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!--Footer-->
+    <footer class="text-center mt-5 p-4 bg-dark text-white">
+        © 2026 Real Betis Balompié - Nicolás Porra Collado<br>
+        Un proyecto para la asignatura Tecnologías Avanzadas de Desarrollo<br>
+        Universidad Pablo de Olavide
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

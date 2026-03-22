@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla - Real Betis Balompié</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid text-center py-3">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo Real Betis" class="img-fluid">
+        </a>
+    </header>
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="plantilla.html">PLANTILLA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partidos.html">PARTIDOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="palmares.html">PALMARÉS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="taquilla.html">TAQUILLA</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Lista de jugadores-->
+    <div class="container mt-5">
+
+        <h2 class="text-center mb-4">PLANTILLA 2025/2026</h2>
+
+        <div class="d-flex justify-content-center gap-2 mb-4 flex-wrap">
+            <button class="btn btn-outline-success filtro-btn" data-filter="all">Todos</button>
+            <button class="btn btn-outline-success filtro-btn" data-filter="por">Porteros</button>
+            <button class="btn btn-outline-success filtro-btn" data-filter="def">Defensas</button>
+            <button class="btn btn-outline-success filtro-btn" data-filter="med">Centrocampistas</button>
+            <button class="btn btn-outline-success filtro-btn" data-filter="del">Delanteros</button>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador por">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">1</div>
+                        <h5 class="card-title">Álvaro <strong>VALLES</strong></h5>
+                        <span class="badge bg-warning text-dark mb-2">POR</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalValles">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">2</div>
+                        <h5 class="card-title">Héctor <strong>BELLERÍN</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalBellerin">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">3</div>
+                        <h5 class="card-title">Diego <strong>LLORENTE</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalLlorente">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">4</div>
+                        <h5 class="card-title"><strong>NATAN</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalNatan">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">5</div>
+                        <h5 class="card-title">Marc <strong>BARTRA</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalBartra">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">6</div>
+                        <h5 class="card-title">Sergi <strong>ALTIMIRA</strong></h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalAltimira">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador del">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">7</div>
+                        <h5 class="card-title"><strong>ANTONY</strong></h5>
+                        <span class="badge bg-danger mb-2">DEL</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalAntony">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">8</div>
+                        <h5 class="card-title">Pablo <strong>FORNALS</strong></h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalFornals">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador del">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">9</div>
+                        <h5 class="card-title"><strong>CHIMY</strong> Ávila</h5>
+                        <span class="badge bg-danger mb-2">DEL</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalChimy">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador del">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">10</div>
+                        <h5 class="card-title"><strong>EZ ABDE</strong></h5>
+                        <span class="badge bg-danger mb-2">DEL</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalAbde">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador del">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">11</div>
+                        <h5 class="card-title">Cédric <strong>BAKAMBU</strong></h5>
+                        <span class="badge bg-danger mb-2">DEL</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalBakambu">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">12</div>
+                        <h5 class="card-title">Ricardo <strong>RODRÍGUEZ</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalRicardo">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador por">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">13</div>
+                        <h5 class="card-title"><strong>ADRIÁN</strong> San Miguel</h5>
+                        <span class="badge bg-warning text-dark mb-2">POR</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalAdrian">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">14</div>
+                        <h5 class="card-title">Sofyan <strong>AMRABAT</strong></h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalAmrabat">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">15</div>
+                        <h5 class="card-title">Álvaro <strong>FIDALGO</strong></h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalFidalgo">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">16</div>
+                        <h5 class="card-title">Valentín <strong>GÓMEZ</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalValentin">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador del">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">17</div>
+                        <h5 class="card-title">Rodrigo <strong>RIQUELME</strong></h5>
+                        <span class="badge bg-danger mb-2">DEL</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalRiquelme">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">18</div>
+                        <h5 class="card-title">Nelson <strong>DEOSSA</strong></h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalDeossa">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador del">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">19</div>
+                        <h5 class="card-title"><strong>CUCHO</strong> Hernández</h5>
+                        <span class="badge bg-danger mb-2">DEL</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalCucho">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">20</div>
+                        <h5 class="card-title">Giovani <strong>LO CELSO</strong></h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalLoCelso">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">21</div>
+                        <h5 class="card-title">Marc <strong>ROCA</strong></h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalRoca">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador med">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">22</div>
+                        <h5 class="card-title"><strong>ISCO</strong> Alarcón</h5>
+                        <span class="badge bg-success mb-2">MED</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalIsco">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">23</div>
+                        <h5 class="card-title">Junior <strong>FIRPO</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalJunior">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">24</div>
+                        <h5 class="card-title">Aitor <strong>RUIBAL</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalRuibal">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador por">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">25</div>
+                        <h5 class="card-title"><strong>PAU</strong> López</h5>
+                        <span class="badge bg-warning text-dark mb-2">POR</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalPau">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador def">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">40</div>
+                        <h5 class="card-title">Ángel <strong>ORTIZ</strong></h5>
+                        <span class="badge bg-primary mb-2">DEF</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalOrtiz">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 jugador del">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <div class="dorsal">52</div>
+                        <h5 class="card-title"><strong>PABLO GARCÍA</strong></h5>
+                        <span class="badge bg-danger mb-2">DEL</span>
+                        <button class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#modalPablo">
+                            Ver perfil
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--Modales de los jugadores-->
+    <div class="modal fade" id="modalValles" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Álvaro Valles</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">1</div>
+                    <span class="badge bg-warning text-dark mb-3">Portero</span>
+                    <p><strong>Edad:</strong> 28 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.91 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBellerin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Héctor Bellerín</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">2</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 31 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.91 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLlorente" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Diego Llorente</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">3</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 32 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.86 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalNatan" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Natan</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">4</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 25 años</p>
+                    <p><strong>Nacionalidad:</strong> Brasil</p>
+                    <p><strong>Altura:</strong> 1.88 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBartra" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Marc Bartra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">5</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 35 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.84 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAltimira" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sergi Altimira</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">6</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 24 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.88 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAntony" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Antony</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">7</div>
+                    <span class="badge bg-danger mb-3">Delantero</span>
+                    <p><strong>Edad:</strong> 26 años</p>
+                    <p><strong>Nacionalidad:</strong> Brasil</p>
+                    <p><strong>Altura:</strong> 1.72 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFornals" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pablo Fornals</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">8</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 30 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.78 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalChimy" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Chimy Ávila</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">9</div>
+                    <span class="badge bg-danger mb-3">Delantero</span>
+                    <p><strong>Edad:</strong> 32 años</p>
+                    <p><strong>Nacionalidad:</strong> Argentina</p>
+                    <p><strong>Altura:</strong> 1.72 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAbde" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ez Abde</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">10</div>
+                    <span class="badge bg-danger mb-3">Delantero</span>
+                    <p><strong>Edad:</strong> 24 años</p>
+                    <p><strong>Nacionalidad:</strong> Marruecos</p>
+                    <p><strong>Altura:</strong> 1.77 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalBakambu" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cédric Bakambu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">11</div>
+                    <span class="badge bg-danger mb-3">Delantero</span>
+                    <p><strong>Edad:</strong> 34 años</p>
+                    <p><strong>Nacionalidad:</strong> República Democrática del Congo</p>
+                    <p><strong>Altura:</strong> 1.82 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRicardo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ricardo Rodríguez</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">12</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 33 años</p>
+                    <p><strong>Nacionalidad:</strong> Suiza</p>
+                    <p><strong>Altura:</strong> 1.82 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAdrian" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Adrián San Miguel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">13</div>
+                    <span class="badge bg-warning text-dark mb-3">Portero</span>
+                    <p><strong>Edad:</strong> 39 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.90 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAmrabat" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sofyan Amrabat</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">14</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 29 años</p>
+                    <p><strong>Nacionalidad:</strong> Marruecos</p>
+                    <p><strong>Altura:</strong> 1.85 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalFidalgo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Álvaro Fidalgo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">15</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 28 años</p>
+                    <p><strong>Nacionalidad:</strong> México</p>
+                    <p><strong>Altura:</strong> 1.74 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalValentin" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Valentín Gómez</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">16</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 22 años</p>
+                    <p><strong>Nacionalidad:</strong> Argentina</p>
+                    <p><strong>Altura:</strong> 1.81 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRiquelme" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Rodrigo Riquelme</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">17</div>
+                    <span class="badge bg-danger mb-3">Delantero</span>
+                    <p><strong>Edad:</strong> 25 años</p>
+                    <p><strong>Nacionalidad:</strong> Argentina</p>
+                    <p><strong>Altura:</strong> 1.74 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalDeossa" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Nelson Deossa</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">18</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 26 años</p>
+                    <p><strong>Nacionalidad:</strong> Colombia</p>
+                    <p><strong>Altura:</strong> 1.85 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalCucho" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Cucho Hernández</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">19</div>
+                    <span class="badge bg-danger mb-3">Delantero</span>
+                    <p><strong>Edad:</strong> 26 años</p>
+                    <p><strong>Nacionalidad:</strong> Colombia</p>
+                    <p><strong>Altura:</strong> 1.75 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalLoCelso" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Giovani Lo Celso</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">20</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 29 años</p>
+                    <p><strong>Nacionalidad:</strong> Argentina</p>
+                    <p><strong>Altura:</strong> 1.77 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRoca" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Marc Roca</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">21</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 29 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.84 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalIsco" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Isco Alarcón</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">22</div>
+                    <span class="badge bg-success mb-3">Mediocentro</span>
+                    <p><strong>Edad:</strong> 33 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.76 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalJunior" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Junior Firpo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">23</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 29 años</p>
+                    <p><strong>Nacionalidad:</strong> República Dominicana</p>
+                    <p><strong>Altura:</strong> 1.84 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalRuibal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Aitor Ruibal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">24</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 29 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.76 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPau" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pau López</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">25</div>
+                    <span class="badge bg-warning text-dark mb-3">Portero</span>
+                    <p><strong>Edad:</strong> 31 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.89 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalOrtiz" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Ángel Ortiz</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">40</div>
+                    <span class="badge bg-primary mb-3">Defensa</span>
+                    <p><strong>Edad:</strong> 21 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.67 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalPablo" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pablo García</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="dorsal mb-2">52</div>
+                    <span class="badge bg-danger mb-3">Delantero</span>
+                    <p><strong>Edad:</strong> 19 años</p>
+                    <p><strong>Nacionalidad:</strong> España</p>
+                    <p><strong>Altura:</strong> 1.75 m</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="text-center mt-5 p-4 bg-dark text-white">
+        © 2026 Real Betis Balompié - Nicolás Porra Collado<br>
+        Un proyecto para la asignatura Tecnologías Avanzadas de Desarrollo<br>
+        Universidad Pablo de Olavide
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

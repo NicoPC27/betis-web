@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partidos - Real Betis Balompié</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Cabecera-->
+    <header class="container-fluid text-center py-3">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo Real Betis" class="img-fluid">
+        </a>
+    </header>
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plantilla.html">PLANTILLA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="partidos.html">PARTIDOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="palmares.html">PALMARÉS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="taquilla.html">TAQUILLA</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- Partidos -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">PARTIDOS</h2>
+
+        <!-- Dropdown filtro -->
+        <div class="d-flex justify-content-center mb-4">
+            <div class="dropdown">
+                <button id="btnFiltro" class="btn btn-success dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                    <span class="texto-btn">Filtrar competición</span>
+                </button>
+                <ul class="dropdown-menu text-center">
+                    <li><button class="dropdown-item filtro-partidos" data-filter="all">Todos</button></li>
+                    <li><button class="dropdown-item filtro-partidos" data-filter="liga">LALIGA EA Sports</button></li>
+                    <li><button class="dropdown-item filtro-partidos" data-filter="europa">UEFA Europa League</button>
+                    </li>
+                    <li><button class="dropdown-item filtro-partidos" data-filter="copa">Copa del Rey</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Lista de partidos -->
+        <div class="tabla-scroll">
+            <div class="list-group">
+
+                <!-- Encabezado -->
+                <div class="list-group-item fw-bold">
+                    <div class="item-inner d-flex text-center">
+                        <div class="col-2">Fecha</div>
+                        <div class="col-4">Partido</div>
+                        <div class="col-3">Competición</div>
+                        <div class="col-3">Ronda</div>
+                    </div>
+                </div>
+
+                <!-- Partidos -->
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">18/08/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Elche.png" alt="Elche" class="escudo">
+                            <span>Elche CF</span>
+                            <span>1-1</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Espanyol" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 1</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">22/08/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>1-0</span>
+                            <span>Deportivo Alavés</span>
+                            <img src="img/Alaves.png" alt="Alavés" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 2</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">27/08/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Celta.png" alt="Celta" class="escudo">
+                            <span>RC Celta</span>
+                            <span>1-1</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 6</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">31/08/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>1-2</span>
+                            <span>Athletic Club</span>
+                            <img src="img/Athletic.png" alt="Athletic" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 3</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">14/09/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Levante.png" alt="Levante" class="escudo">
+                            <span>Levante UD</span>
+                            <span>2-2</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 4</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">19/09/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>3-1</span>
+                            <span>Real Sociedad</span>
+                            <img src="img/RealSociedad.png" alt="Real Sociedad" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 5</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">24/09/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-2</span>
+                            <span>Nottingham Forest</span>
+                            <img src="img/Forest.png" alt="Forest" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 1</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">28/09/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-0</span>
+                            <span>CA Osasuna</span>
+                            <img src="img/Osasuna.png" alt="Osasuna" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 7</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">02/10/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Ludogorets.png" alt="Ludogorets" class="escudo">
+                            <span>PFC Ludogorets</span>
+                            <span>0-2</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 2</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">05/10/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Espanyol.png" alt="Espanyol" class="escudo">
+                            <span>RCD Espanyol</span>
+                            <span>1-2</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 8</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">18/10/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Villarreal.png" alt="Villarreal" class="escudo">
+                            <span>Villarreal CF</span>
+                            <span>2-2</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 9</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">23/10/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Genk.png" alt="Genk" class="escudo">
+                            <span>KRC Genk</span>
+                            <span>0-0</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 3</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">27/10/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>0-2</span>
+                            <span>Atlético de Madrid</span>
+                            <img src="img/Atletico.png" alt="Atlético" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 10</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido copa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">30/10/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/PalmadelRio.png" alt="Palma del Río" class="escudo">
+                            <span>Atlético Palma del Río</span>
+                            <span>1-7</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-dark">Copa del Rey</span>
+                        </div>
+                        <div class="col-3">1ª Ronda</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">02/11/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>3-0</span>
+                            <span>RCD Mallorca</span>
+                            <img src="img/Mallorca.png" alt="Mallorca" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 11</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">06/11/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-0</span>
+                            <span>Olympique Lyonnais</span>
+                            <img src="img/Lyon.png" alt="Lyon" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 4</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">09/11/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Valencia.png" alt="Valencia" class="escudo">
+                            <span>Valencia CF</span>
+                            <span>1-1</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 12</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">23/11/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>1-1</span>
+                            <span>Girona FC</span>
+                            <img src="img/Girona.png" alt="Girona" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 13</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">27/11/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-1</span>
+                            <span>FC Utrecht</span>
+                            <img src="img/Utrecht.png" alt="Utrecht" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 5</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">30/11/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Sevilla.png" alt="Sevilla" class="escudo">
+                            <span>Sevilla FC</span>
+                            <span>0-2</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 14</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido copa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">03/12/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Torrent.png" alt="Torrent" class="escudo">
+                            <span>Torrent CF</span>
+                            <span>1-4</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-dark">Copa del Rey</span>
+                        </div>
+                        <div class="col-3">2ª Ronda</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">06/12/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>3-5</span>
+                            <span>FC Barcelona</span>
+                            <img src="img/Barcelona.png" alt="Barcelona" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 15</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">11/12/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Zagreb.png" alt="Dinamo Zagreb" class="escudo">
+                            <span>GNK Dinamo Zagreb</span>
+                            <span>1-3</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 6</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">15/12/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Rayo.png" alt="Rayo Vallecano" class="escudo">
+                            <span>Rayo Vallecano</span>
+                            <span>0-0</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 16</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido copa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">18/12/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Murcia.png" alt="Murcia" class="escudo">
+                            <span>Real Murcia</span>
+                            <span>0-2</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-dark">Copa del Rey</span>
+                        </div>
+                        <div class="col-3">Dieciseisavos de Final</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">21/12/25</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>4-0</span>
+                            <span>Getafe CF</span>
+                            <img src="img/Getafe.png" alt="Getafe" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 17</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">04/01/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Madrid.png" alt="Real Madrid" class="escudo">
+                            <span>Real Madrid CF</span>
+                            <span>5-1</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 18</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">10/01/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Oviedo.png" alt="Real Oviedo" class="escudo">
+                            <span>Real Oviedo</span>
+                            <span>1-1</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 19</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido copa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">14/01/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-1</span>
+                            <span>Elche CF</span>
+                            <img src="img/Elche.png" alt="Elche" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-dark">Copa del Rey</span>
+                        </div>
+                        <div class="col-3">Octavos de Final</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">17/01/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-0</span>
+                            <span>Villarreal CF</span>
+                            <img src="img/Villarreal.png" alt="Getafe" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 20</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">22/01/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/PAOK.png" alt="PAOK" class="escudo">
+                            <span>PAOK FC</span>
+                            <span>2-0</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 7</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">25/01/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Alaves.png" alt="Alavés" class="escudo">
+                            <span>Deportivo Alavés</span>
+                            <span>2-1</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 21</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">29/01/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-1</span>
+                            <span>Feyenoord Rotterdam</span>
+                            <img src="img/Feyenoord.png" alt="Feyenoord" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Jornada 8</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">01/02/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-1</span>
+                            <span>Valencia CF</span>
+                            <img src="img/Valencia.png" alt="Valencia" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 22</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido copa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">05/02/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>0-5</span>
+                            <span>Atlético de Madrid</span>
+                            <img src="img/Atletico.png" alt="Atlético" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-dark">Copa del Rey</span>
+                        </div>
+                        <div class="col-3">Cuartos de Final</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">08/02/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Atletico.png" alt="Atlético" class="escudo">
+                            <span>Atlético de Madrid</span>
+                            <span>0-1</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 23</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">15/02/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Mallorca.png" alt="Mallorca" class="escudo">
+                            <span>RCD Mallorca</span>
+                            <span>1-2</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 24</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">21/02/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>1-1</span>
+                            <span>Rayo Vallecano</span>
+                            <img src="img/Rayo.png" alt="Rayo Vallecano" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 25</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">01/03/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>2-2</span>
+                            <span>Sevilla FC</span>
+                            <img src="img/Sevilla.png" alt="Sevilla" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 26</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">08/03/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Getafe.png" alt="Getafe" class="escudo">
+                            <span>Getafe CF</span>
+                            <span>2-0</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 27</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">12/03/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Panathinaikos.png" alt="Panathinaikos" class="escudo">
+                            <span>Panathinaikos FC</span>
+                            <span>1-0</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Octavos de Final (Ida)</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">15/03/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>1-1</span>
+                            <span>RC Celta</span>
+                            <img src="img/Celta.png" alt="Celta" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 28</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">19/03/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>4-0</span>
+                            <span>Panathinaikos FC</span>
+                            <img src="img/Panathinaikos.png" alt="Panathinaikos" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Octavos de Final (Vuelta)</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">22/03/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Athletic.png" alt="Athletic" class="escudo">
+                            <span>Athletic Club</span>
+                            <span>-</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 29</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">04/04/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>-</span>
+                            <span>RCD Espanyol</span>
+                            <img src="img/Espanyol.png" alt="Espanyol" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 30</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">08/04/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Braga.png" alt="Braga" class="escudo">
+                            <span>SC Braga</span>
+                            <span>-</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Cuartos de Final (Ida)</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">12/04/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Osasuna.png" alt="Osasuna" class="escudo">
+                            <span>CA Osasuna</span>
+                            <span>-</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 31</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido europa">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">16/04/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>-</span>
+                            <span>SC Braga</span>
+                            <img src="img/Braga.png" alt="Braga" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-warning text-dark">UEFA Europa League</span>
+                        </div>
+                        <div class="col-3">Cuartos de Final (Vuelta)</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">22/04/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Girona.png" alt="Girona" class="escudo">
+                            <span>Girona FC</span>
+                            <span>-</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 33</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">26/04/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>-</span>
+                            <span>Real Madrid</span>
+                            <img src="img/Madrid.png" alt="Madrid" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 32</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">03/05/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>-</span>
+                            <span>Real Oviedo</span>
+                            <img src="img/Oviedo.png" alt="Oviedo" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 34</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">10/05/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/RealSociedad.png" alt="Real Sociedad" class="escudo">
+                            <span>Real Sociedad</span>
+                            <span>-</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 35</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">13/05/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>-</span>
+                            <span>Elche CF</span>
+                            <img src="img/Elche.png" alt="Elche" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 36</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">17/05/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Barcelona.png" alt="Barcelona" class="escudo">
+                            <span>FC Barcelona</span>
+                            <span>-</span>
+                            <span>Real Betis</span>
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 37</div>
+                    </div>
+                </div>
+
+                <div class="list-group-item partido liga">
+                    <div class="item-inner d-flex text-center align-items-center">
+                        <div class="col-2">24/05/26</div>
+                        <div class="col-4 d-flex align-items-center justify-content-center gap-2 partido-equipos">
+                            <img src="img/Betis.png" alt="Betis" class="escudo">
+                            <span>Real Betis</span>
+                            <span>-</span>
+                            <span>Levante UD</span>
+                            <img src="img/Levante.png" alt="Levante" class="escudo">
+                        </div>
+                        <div class="col-3">
+                            <span class="badge bg-danger">LALIGA EA Sports</span>
+                        </div>
+                        <div class="col-3">Jornada 38</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="text-center mt-5 p-4 bg-dark text-white">
+        © 2026 Real Betis Balompié - Nicolás Porra Collado<br>
+        Un proyecto para la asignatura Tecnologías Avanzadas de Desarrollo<br>
+        Universidad Pablo de Olavide
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

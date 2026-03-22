@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Betis Balompié</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!--Cabecera-->
+    <header class="container-fluid text-center py-3">
+        <a href="index.html">
+            <img src="img/logo.png" alt="Logo Real Betis" class="img-fluid">
+        </a>
+    </header>
+
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-center" id="menu">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="plantilla.html">PLANTILLA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partidos.html">PARTIDOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="palmares.html">PALMARÉS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="taquilla.html">TAQUILLA</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <!--Carrusel-->
+    <div class="container-fluid mt-4">
+        <div id="carouselBetis" class="carousel slide" data-bs-ride="carousel">
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselBetis" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#carouselBetis" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carouselBetis" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#carouselBetis" data-bs-slide-to="3"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="img/carrusel1.jpg" class="d-block w-100" alt="Athletic-Betis">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption ">
+                        <h5>Athletic Club - Real Betis</h5>
+                        <p>Domingo 22/03 (18:30)</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item active">
+                    <img src="img/carrusel2.jpg" class="d-block w-100" alt="Betis-Panathinaikos">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption ">
+                        <h5>Real Betis 4-0 Panathinaikos FC</h5>
+                        <p>El Betis, a cuartos de Europa League</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/carrusel3.jpg" class="d-block w-100" alt="Betis 1-1 Celta">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption ">
+                        <h5>Real Betis 1-1 RC Celta</h5>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="img/carrusel4.jpg" class="d-block w-100" alt="Panathinaikos 1-0 Betis">
+                    <div class="carousel-overlay"></div>
+                    <div class="carousel-caption ">
+                        <h5>Panathinaikos FC 1-0 Real Betis</h5>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselBetis" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselBetis" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+
+    <!--Últimos Partidos-->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">ÚLTIMOS PARTIDOS</h2>
+
+        <div class="row justify-content-center g-4">
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Betis.png">
+                                <span>BET</span>
+                            </div>
+                            <span class="fw-bold">4-0</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>PAN</span>
+                                <img class="escudo" src="img/Panathinaikos.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">UEFA Europa League - Octavos de Final Vuelta</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Betis.png">
+                                <span>BET</span>
+                            </div>
+                            <span class="fw-bold">1-1</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>CEL</span>
+                                <img class="escudo" src="img/Celta.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">LALIGA - Jornada 28</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Panathinaikos.png">
+                                <span>PAN</span>
+                            </div>
+                            <span class="fw-bold">1-0</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>BET</span>
+                                <img class="escudo" src="img/Betis.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">UEFA Europa League - Octavos de Final Ida</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Getafe.png">
+                                <span>GET</span>
+                            </div>
+                            <span class="fw-bold">2-0</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>BET</span>
+                                <img class="escudo" src="img/Betis.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">LALIGA - Jornada 27</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Próximos Partidos-->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">PRÓXIMOS PARTIDOS</h2>
+
+        <div class="row justify-content-center g-4">
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Athletic.png">
+                                <span>ATH</span>
+                            </div>
+                            <span class="fw-bold">VS</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>BET</span>
+                                <img class="escudo" src="img/Betis.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">LALIGA - Jornada 29</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Domingo 22/03 - 18:30</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">San Mamés</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Betis.png">
+                                <span>BET</span>
+                            </div>
+                            <span class="fw-bold">VS</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>ESP</span>
+                                <img class="escudo" src="img/Espanyol.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">LALIGA - Jornada 30</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Sábado 04/04 - 18:30</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">La Cartuja</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Braga.png">
+                                <span>BRA</span>
+                            </div>
+                            <span class="fw-bold">VS</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>BET</span>
+                                <img class="escudo" src="img/Betis.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">UEFA Europa League - Cuartos de Final Ida</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Miércoles 08/04 - 18:45</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Estádio Municipal de Braga</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-3">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                        <h5 class="card-title d-flex align-items-center justify-content-between">
+                            <div class="d-flex align-items-center gap-1">
+                                <img class="escudo" src="img/Osasuna.png">
+                                <span>OSA</span>
+                            </div>
+                            <span class="fw-bold">VS</span>
+                            <div class="d-flex align-items-center gap-1">
+                                <span>BET</span>
+                                <img class="escudo" src="img/Betis.png">
+                            </div>
+                        </h5>
+                        <h6 class="card-subtitle mb-2 text-muted">LALIGA - Jornada 31</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">Domingo 12/04 - 14:00</h6>
+                        <h6 class="card-subtitle mb-2 text-muted">El Sadar</h6>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Clasificación-->
+    <h2 class="text-center mb-4">CLASIFICACIÓN</h2>
+    <div class="tabla-card-wrapper">
+        <div class="tabla-card">
+            
+            <table class="table align-middle text-center mb-0 w-auto">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>Equipo</th>
+                        <th>PJ</th>
+                        <th>PTS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>1</th>
+                        <td class="team-cell">
+                            <img src="img/Barcelona.png" alt="FC Barcelona" class="escudo">
+                            FC Barcelona
+                        </td>
+                        <td>28</td>
+                        <th>70</th>
+                    </tr>
+                    <tr>
+                        <th>2</th>
+                        <td class="team-cell">
+                            <img src="img/Madrid.png" alt="Real Madrid" class="escudo">
+                            Real Madrid
+                        </td>
+                        <td>28</td>
+                        <th>66</th>
+                    </tr>
+                    <tr>
+                        <th>3</th>
+                        <td class="team-cell">
+                            <img src="img/Atletico.png" alt="Atlético de Madrid" class="escudo">
+                            Atlético de Madrid
+                        </td>
+                        <td>28</td>
+                        <th>57</th>
+                    </tr>
+                    <tr>
+                        <th>4</th>
+                        <td class="team-cell">
+                            <img src="img/Villarreal.png" alt="Villarreal CF" class="escudo">
+                            Villarreal CF
+                        </td>
+                        <td>28</td>
+                        <th>55</th>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <td class="team-cell">
+                            <img src="img/Betis.png" alt="Real Betis" class="escudo">
+                            Real Betis
+                        </td>
+                        <td>28</td>
+                        <th>44</th>
+                    </tr>
+                    <tr>
+                        <th>6</th>
+                        <td class="team-cell">
+                            <img src="img/Celta.png" alt="RC Celta" class="escudo">
+                            RC Celta
+                        </td>
+                        <td>28</td>
+                        <th>41</th>
+                    </tr>
+                    <tr>
+                        <th>7</th>
+                        <td class="team-cell">
+                            <img src="img/RealSociedad.png" alt="Real Sociedad" class="escudo">
+                            Real Sociedad
+                        </td>
+                        <td>28</td>
+                        <th>38</th>
+                    </tr>
+                    <tr>
+                        <th>8</th>
+                        <td class="team-cell">
+                            <img src="img/Espanyol.png" alt="RCD Espanyol" class="escudo">
+                            RCD Espanyol
+                        </td>
+                        <td>28</td>
+                        <th>37</th>
+                    </tr>
+                    <tr>
+                        <th>9</th>
+                        <td class="team-cell">
+                            <img src="img/Getafe.png" alt="Getafe CF" class="escudo">
+                            Getafe CF
+                        </td>
+                        <td>28</td>
+                        <th>35</th>
+                    </tr>
+                    <tr>
+                        <th>10</th>
+                        <td class="team-cell">
+                            <img src="img/Athletic.png" alt="Athletic Club" class="escudo">
+                            Athletic Club
+                        </td>
+                        <td>28</td>
+                        <th>35</th>
+                    </tr>
+                    <tr>
+                        <th>11</th>
+                        <td class="team-cell">
+                            <img src="img/Osasuna.png" alt="CA Osasuna" class="escudo">
+                            CA Osasuna
+                        </td>
+                        <td>28</td>
+                        <th>34</th>
+                    </tr>
+                    <tr>
+                        <th>12</th>
+                        <td class="team-cell">
+                            <img src="img/Girona.png" alt="Girona FC" class="escudo">
+                            Girona FC
+                        </td>
+                        <td>28</td>
+                        <th>34</th>
+                    </tr>
+                    <tr>
+                        <th>13</th>
+                        <td class="team-cell">
+                            <img src="img/Rayo.png" alt="Rayo Vallecano" class="escudo">
+                            Rayo Vallecano
+                        </td>
+                        <td>28</td>
+                        <th>32</th>
+                    </tr>
+                    <tr>
+                        <th>14</th>
+                        <td class="team-cell">
+                            <img src="img/Valencia.png" alt="Valencia CF" class="escudo">
+                            Valencia CF
+                        </td>
+                        <td>28</td>
+                        <th>32</th>
+                    </tr>
+                    <tr>
+                        <th>15</th>
+                        <td class="team-cell">
+                            <img src="img/Sevilla.png" alt="Sevilla FC" class="escudo">
+                            Sevilla FC
+                        </td>
+                        <td>28</td>
+                        <th>31</th>
+                    </tr>
+                    <tr>
+                        <th>16</th>
+                        <td class="team-cell">
+                            <img src="img/Mallorca.png" alt="RCD Mallorca" class="escudo">
+                            RCD Mallorca
+                        </td>
+                        <td>28</td>
+                        <th>28</th>
+                    </tr>
+                    <tr>
+                        <th>17</th>
+                        <td class="team-cell">
+                            <img src="img/Alaves.png" alt="Deportivo Alavés" class="escudo">
+                            Deportivo Alavés
+                        </td>
+                        <td>28</td>
+                        <th>28</th>
+                    </tr>
+                    <tr>
+                        <th>18</th>
+                        <td class="team-cell">
+                            <img src="img/Elche.png" alt="Elche CF" class="escudo">
+                            Elche CF
+                        </td>
+                        <td>28</td>
+                        <th>26</th>
+                    </tr>
+                    <tr>
+                        <th>19</th>
+                        <td class="team-cell">
+                            <img src="img/Levante.png" alt="Levante UD" class="escudo">
+                            Levante UD
+                        </td>
+                        <td>28</td>
+                        <th>23</th>
+                    </tr>
+                    <tr>
+                        <th>20</th>
+                        <td class="team-cell">
+                            <img src="img/Oviedo.png" alt="Real Oviedo" class="escudo">
+                            Real Oviedo
+                        </td>
+                        <td>28</td>
+                        <th>21</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="text-center mt-5 p-4 bg-dark text-white">
+        © 2026 Real Betis Balompié - Nicolás Porra Collado<br>
+        Un proyecto para la asignatura Tecnologías Avanzadas de Desarrollo<br>
+        Universidad Pablo de Olavide
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
